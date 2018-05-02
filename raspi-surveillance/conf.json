@@ -1,0 +1,14 @@
+{
+  "show_video": true,
+  "use_dropbox": true,
+  "dropbox_access_token": "0NjyWU0eglkAAAAAAAAdi_BBUnA0DCG5YmxTmJjrxyLDsjpOb_0V9f7R3v0uEwA0",
+  "dropbox_base_path": "RasPi_snapshots",
+  "min_upload_seconds": 3.0,
+  "min_motion_frames": 8,
+  "camera_warmup_time": 2.5,
+  "delta_thresh": 5,
+  "resolution": [640, 480],
+  "fps": 16,
+  "min_area": 5000
+}
+

@@ -65,9 +65,9 @@ for f in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True
     text = "Occupied"
 
   ts = timestamp.strftime("%A %d %B %Y %I:%M:%S%p")
-  cv2.putText(frame, "Room Status: {}".format(text), (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 
+  cv2.putText(frame, "Room Status: {}".format(text), (10, 20), cv2.FONT_HERSHEY_PLAIN, 
     0.5, (0, 0, 255), 2)
-  cv2.putText(frame, ts, (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX,
+  cv2.putText(frame, ts, (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_PLAIN,
     0.35, (0, 0, 255), 1)
     
   if text == "Occupied":

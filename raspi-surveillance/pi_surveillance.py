@@ -64,7 +64,7 @@ for f in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True
     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
     text = "Occupied"
 
-  ts = timestamp.strftime("%A %d %B %Y %I:%M:%S%p")
+  ts = timestamp.strftime("%y%m%d-%H%M%S")
   cv2.putText(frame, "Room Status: {}".format(text), (10, 20), cv2.FONT_HERSHEY_PLAIN, 
     0.5, (0, 0, 255), 2)
   cv2.putText(frame, ts, (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_PLAIN,

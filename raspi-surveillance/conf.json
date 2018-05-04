@@ -1,5 +1,5 @@
 {
-  "show_video": false,
+  "show_video": true,
   "use_dropbox": true,
   "dropbox_access_token": "0NjyWU0eglkAAAAAAAAdi_BBUnA0DCG5YmxTmJjrxyLDsjpOb_0V9f7R3v0uEwA0",
   "dropbox_base_path": "RasPi_snapshots",

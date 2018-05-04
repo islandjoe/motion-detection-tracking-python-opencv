@@ -63,7 +63,8 @@ for f in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True
     (x, y, w, h) = cv2.boundingRect(c)
     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
     text = "Occupied"
-
+  
+  # (year)(month)-(day)(hour)(minute)(sec) 181231-245959.jpg
   ts = timestamp.strftime("%y%m%d-%H%M%S")
   cv2.putText(frame, "Room Status: {}".format(text), (10, 20), cv2.FONT_HERSHEY_PLAIN, 
     0.5, (0, 0, 255), 2)
@@ -77,7 +78,7 @@ for f in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True
       if motionCounter >= conf["min_motion_frames"]:
         if conf["use_dropbox"]:
           t = TempImage()
-          cv2.imwrite(t.path, frame)
+          cv2.imwrite(t.path, thresh)
 
           print("[UPLOAD] {}".format(ts))
           path = "/{base_path}/{timestamp}.jpg".format(

@@ -1,7 +1,7 @@
 {
   "show_video": false,
   "use_dropbox": true,
-  "dropbox_access_token": "0NjyWU0eglkAAAAAAAAdi_BBUnA0DCG5YmxTmJjrxyLDsjpOb_0V9f7R3v0uEwA0",
+  "dropbox_access_token": "0NjyWU0eglkAAAAAAAAdi_xxxxxxXXXXXXXXxxxxxxXXXXXXX",
   "dropbox_base_path": "RasPi_snapshots",
   "min_upload_seconds": 3.0,
   "min_motion_frames": 8,
